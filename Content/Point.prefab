@@ -1,0 +1,29 @@
+{
+	"ID": "6db98039492ecdbc5def0789ff819a5d",
+	"TypeName": "FlaxEngine.Prefab",
+	"EngineBuild": 6167,
+	"Data": [
+	{
+		"TypeID": 1,
+		"ID": "6cd9909746f9adad08a10a9dc3b7e029",
+		"ParentID": "00000000000000000000000000000000",
+		"Name": "Sphere",
+		"Transform": {
+			"Scale": {
+				"X": 0.05000000074505806,
+				"Y": 0.05000000074505806,
+				"Z": 0.05000000074505806
+			}
+		},
+		"StaticFlags": 0,
+		"Model": "dd86c4724bf734c4959d23b3c74faa05",
+		"Buffer": {
+			"Entries": [
+				{
+					"Material": "4448fe6b4dad6c8fff645a95d4534e58"
+				}
+			]
+		}
+	}
+]
+}
