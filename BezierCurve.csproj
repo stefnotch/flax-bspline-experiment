@@ -52,10 +52,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Source\BezierCurve.cs" />
     <Compile Include="Source\BSpline.cs" />
-    <Compile Include="Source\DrawCallCollector.cs" />
-    <Compile Include="Source\Test.cs" />
     <Compile Include="Cache\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

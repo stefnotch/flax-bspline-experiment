@@ -59,8 +59,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Cache\AssemblyInfo.cs" />
-    <Compile Include="Source\Editor\BezierCurvePlugin.cs" />
-    <Compile Include="Source\Editor\EditorWindowRenderer.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
