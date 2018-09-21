@@ -23,7 +23,14 @@
 			"TypeID": 3,
 			"ID": "28553d634087c67c711ebd96080482aa",
 			"ParentID": "74a68a984824b4510d12589f199ad68f",
-			"Name": "Visuals"
+			"Name": "Visuals",
+			"Transform": {
+				"Translation": {
+					"X": -0.00002574920654296875,
+					"Y": 0.0,
+					"Z": 0.00000762939453125
+				}
+			}
 		},
 		{
 			"TypeID": 10,
@@ -142,11 +149,11 @@
 			"V": {
 	"Step": 0.01,
 	"Material": "7d946f724cffb015b4268091089793d8",
-	"_points": [
+	"Points": [
 		{
 			"X": -100.0,
 			"Y": 0.0,
-			"Z": 0.0
+			"Z": 2.24679565
 		},
 		{
 			"X": -50.0,
@@ -156,7 +163,7 @@
 		{
 			"X": 50.0,
 			"Y": -50.0,
-			"Z": 0.0
+			"Z": -99.8981
 		},
 		{
 			"X": 100.0,
@@ -164,8 +171,24 @@
 			"Z": 0.0
 		}
 	],
+	"Degree": 2,
 	"PointActor": "6db98039492ecdbc5def0789ff819a5d"
 }
+		},
+		{
+			"TypeID": 1,
+			"ID": "dd211e384767ae78b20c81b562dda834",
+			"ParentID": "d5d456574de7a241e0c5e8acb132b389",
+			"Name": "ModelActor",
+			"HideFlags": 4,
+			"Model": "9fbeaa5e45276c86667418a32f0a8987",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "7d946f724cffb015b4268091089793d8"
+					}
+				]
+			}
 		}
 	]
 }

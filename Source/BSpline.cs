@@ -8,6 +8,7 @@ namespace BezierCurve
 	/// <summary>
 	/// A B-Spline
 	/// </summary>
+	[ExecuteInEditMode]
 	public class BSpline : Script
 	{
 		/// <summary>
@@ -64,6 +65,7 @@ namespace BezierCurve
 				_pointsContainer = New<EmptyActor>();
 				Actor.AddChild(_pointsContainer, false);
 				_pointsContainer.LocalPosition = Vector3.Zero;
+				_pointsContainer.HideFlags = HideFlags.DontSave;
 			}
 			else
 			{
@@ -102,17 +104,22 @@ namespace BezierCurve
 
 		private void UpdatePoints()
 		{
-			if (_pointsContainer.ChildrenCount >= Points.Length)
+			if (_pointsContainer)
 			{
-				for (int i = 0; i < Points.Length; i++)
+				if (_pointsContainer.ChildrenCount >= Points.Length)
 				{
-					Points[i] = _pointsContainer.GetChild(i).LocalPosition;
+					for (int i = 0; i < Points.Length; i++)
+					{
+						Points[i] = _pointsContainer.GetChild(i).LocalPosition;
+					}
 				}
 			}
 		}
 
 		private void UpdateMesh(Mesh mesh)
 		{
+			if (mesh == null) return;
+
 			float[] knots = new float[] { 0, 0, 0, 1, 2, 2, 2 };
 
 			// 3 points => 1 triangle
